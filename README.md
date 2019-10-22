@@ -3,7 +3,7 @@
 
 **This site contains Themengine.js powered through jquery.
 
-live demo:http://aruncoolpage.co.nf/PluginDemo/Themengine-TAB/
+live demo:http://aruncoolpage.c1.biz/PluginDemo/Themengine-TAB/
 
 plugin author: M.Arun Bharath s/o A.Mathiyazhalagan
 
