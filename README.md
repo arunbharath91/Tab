@@ -1,8 +1,6 @@
 # Tab
 **Tab plugin is added **Supports most of the screen sizes including tablets and mobiles. **licenced under the category of open-source free licence crendentials. **The information like company name or anything provided in this plugin is only an fake one.
 
-**This site contains Themengine.js powered through jquery.
-
 live demo:http://arunbharath.c1.biz/PluginDemo/Tab
 
 plugin author: M.Arun Bharath s/o A.Mathiyazhalagan
