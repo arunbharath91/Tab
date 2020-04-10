@@ -38,4 +38,42 @@
   border-top: none;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+  position: relative;
+  min-height: 100px;
+}
+
+.loader {
+  width: 100%;
+  background: #f6f6f6;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.loader::after {
+  content: '';
+  border: 5px solid #f3f3f3;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  border-top: 5px solid #555;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: calc(50% - 20px);
+  top: calc(50% - 20px);
+  transform: translate(-50%, -50%);
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
