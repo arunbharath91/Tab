@@ -10,7 +10,7 @@ export class Tab {
     this.initTab();
   }
 
-  initTab() {
+  private initTab() {
     const tabContent = document.createElement('div');
     tabContent.className = 'tabcontent';
     tabContent.innerHTML = `<div class="view-container"></div>`;
@@ -32,7 +32,7 @@ export class Tab {
             headers: myHeaders
           }, (document.querySelector('.view-container') as HTMLElement));
         } else {
-          this.projectView(tabContent, e.target.getAttribute('data-tab'));
+          this.insertView(tabContent, e.target.getAttribute('data-tab'));
         }
 
       }
@@ -51,7 +51,7 @@ export class Tab {
     });
   }
 
-  protected projectView(tabContent: HTMLElement, id: string) {
+  protected insertView(tabContent: HTMLElement, id: string) {
     const templateContent = (document.querySelector(`template[tab-ref="${id.replace("#", "")}"]`) as HTMLElement);
     (tabContent.querySelector(`.view-container`) as HTMLElement).innerHTML = templateContent.innerHTML;
   }
